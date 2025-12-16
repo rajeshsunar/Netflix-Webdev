@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/project.css">
+</head>
+<body>
+
+    <!-- HEADER/NAVIGATION -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Netflix Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+                         alt="Netflix" class="netflix-logo">
+                </a>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trendingsSlider">Trendings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popularSlider">Popular ON Netflix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourfavoritesSlider">Our Favorites</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Side Icons -->
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-search text-white me-3"></i>
+                        <i class="fas fa-bell text-white me-3"></i>
+                        <img src="./media/photos/IMG_0501.png" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO/BANNER SECTION -->
+    <section class="hero-section">
+        <!-- Background Video (Autoplay) -->
+        <video class="hero-video" autoplay muted loop id="heroVideo">
+            <source src="./media/videos/Hero section video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Stranger Things</h1>
+            <p class="hero-description">
+                When a young boy vanishes, a small town uncovers a mystery involving 
+                secret experiments, terrifying supernatural forces and one strange little girl.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-light btn-lg" id="playBtn">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button class="btn btn-secondary btn-lg" id="moreInfoBtn">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+        </div>
+
+        <!-- Fade Bottom Effect -->
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- CONTENT SLIDERS SECTION -->
+    <section class="content-section">
+        <div class="container-fluid">
+
+            <!-- Trendings-->
+            <div class="content-row-1">
+                <h2 class="row-title">Trendings</h2>
+                <div class="row-slider" id="trendingsSlider">
+                    <button class="slider-btn slider-btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-content">
+                        <div class="movie-card" data-video="./media/videos/Video1.mp4" data-title="A Lonley Man Walking" data-description="A thrilling sci-fi series set in the 1980s.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video1.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video2.MP4" data-title="The Crown" data-description="The reign of Queen Elizabeth II.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video2.MP4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video3.MP4" data-title="Wednesday" data-description="Wednesday Addams' years as a student.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video3.MP4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video4.mp4" data-title="Money Heist" data-description="A criminal mastermind and his team.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video4.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video5.mp4" data-title="Squid Game" data-description="Hundreds of contestants compete for prize.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video5.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video6.mp4" data-title="Breaking Bad" data-description="A chemistry teacher turned meth kingpin.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video6.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Popular on Netflix Slider -->
+            <div class="content-row-2">
+                <h2 class="row-title">Popular on Netflix</h2>
+                <div class="row-slider" id="popularSlider">
+                    <button class="slider-btn slider-btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-content">
+                        <div class="movie-card" data-video="./media/videos/Video7.mp4" data-title="Narcos" data-description="The rise and fall of Pablo Escobar.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video7.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video8.mp4" data-title="Dark" data-description="A family saga with a supernatural twist.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video8.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video9.mp4" data-title="Peaky Blinders" data-description="A gangster family epic set in Birmingham.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video9.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video10.mp4" data-title="Black Mirror" data-description="An anthology examining modern society.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video10.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video11.mp4" data-title="The Witcher" data-description="Geralt of Rivia, a solitary monster hunter.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video11.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video12.mp4" data-title="Ozark" data-description="A financial planner relocates his family.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video12.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Our Favorites -->
+            <div class="content-row-3">
+                <h2 class="row-title">Our Favorites</h2>
+                <div class="row-slider" id="ourfavoritesSlider">
+                    <button class="slider-btn slider-btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-content">
+                        <div class="movie-card" data-video="./media/videos/Video7.mp4" data-title="Narcos" data-description="The rise and fall of Pablo Escobar.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video7.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video8.mp4" data-title="Dark" data-description="A family saga with a supernatural twist.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video8.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video9.mp4" data-title="Peaky Blinders" data-description="A gangster family epic set in Birmingham.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video9.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video10.mp4" data-title="Black Mirror" data-description="An anthology examining modern society.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video10.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video11.mp4" data-title="The Witcher" data-description="Geralt of Rivia, a solitary monster hunter.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video11.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="movie-card" data-video="./media/videos/Video12.mp4" data-title="Ozark" data-description="A financial planner relocates his family.">
+                            <video class="card-video" muted loop>
+                                <source src="./media/videos/Video12.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO PREVIEW MODAL -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <!-- Video Preview Section -->
+                    <div class="video-preview-container position-relative">
+                        <video class="w-100 preview-video" muted loop id="previewVideo">
+                            <source src="./media/videos/Hero section video.mp4" type="video/mp4">
+                        </video>
+                        <!-- Play Button Overlay -->
+                        <div class="preview-play-overlay">
+                            <button class="btn-fullscreen-play" id="fullscreenPlayBtn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <!-- Video Info Overlay -->
+                        <div class="preview-info">
+                            <h3 class="preview-title" id="previewTitle">Movie Title</h3>
+                            <p class="preview-description" id="previewDescription">Movie description goes here.</p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="p-4">
+                        <div class="d-flex gap-2 mb-3">
+                            <button class="btn btn-light" id="fullscreenPlayBtn2">
+                                <i class="fas fa-play me-2"></i>Play
+                            </button>
+                            <button class="btn btn-outline-light">
+                                <i class="fas fa-plus me-2"></i>My List
+                            </button>
+                            <button class="btn btn-outline-light">
+                                <i class="fas fa-thumbs-up me-2"></i>
+                            </button>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p class="mb-2"><strong>Cast:</strong> Actor 1, Actor 2, Actor 3</p>
+                                <p class="mb-2"><strong>Genres:</strong> Drama, Thriller, Action</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="mb-2"><strong>Release:</strong> 2023</p>
+                                <p class="mb-2"><strong>Rating:</strong> 16+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOFULLSCREEN VIDEO DAL -->
+    <div class="modal fade" id="fullscreenModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black">
+                <div class="modal-header border-0 position-absolute w-100" style="z-index: 1000;">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0 d-flex align-items-center justify-content-center">
+                    <video class="fullscreen-video" controls id="fullscreenVideo">
+                        <source src="./media/videos/Hero section video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MORE INFO MODAL -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Stranger Things</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-success me-2">98% Match</span>
+                        <span class="me-2">2016</span>
+                        <span class="badge bg-secondary me-2">16+</span>
+                        <span>4 Seasons</span>
+                    </div>
+                    <p class="mb-3">
+                        When a young boy vanishes, a small town uncovers a mystery involving 
+                        secret experiments, terrifying supernatural forces and one strange little girl.
+                    </p>
+                    <p class="mb-2"><strong>Cast:</strong> Millie Bobby Brown, Finn Wolfhard, Winona Ryder</p>
+                    <p class="mb-2"><strong>Genres:</strong> Sci-Fi TV, Horror TV, Teen TV</p>
+                    <p><strong>This show is:</strong> Suspenseful, Exciting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links mb-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="footer-links">
+                        <li><a href="#">Audio and Subtitles</a></li>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="footer-links">
+                        <li><a href="#">Audio Description</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="footer-links">
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 1997-2024 Netflix, Inc.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/project.js"></script>
+
+</body>
+</html>
