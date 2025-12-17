@@ -138,6 +138,10 @@ body {
     z-index: 2;
 }
 
+.logo{
+    margin: 500px;
+    z-index: 10;
+}
 /* CONTENT SLIDERS SECTION */
 .content-section {
     position: relative;
